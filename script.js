@@ -5,7 +5,7 @@ buttons.forEach(button => {
 
 
   button.addEventListener('click', () => {
-    playRound(button.id, computerPlay())
+    const result = playRound(button.id, computerPlay())
   })
 })
 
