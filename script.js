@@ -4,8 +4,8 @@ const buttons = document.querySelectorAll('button')
 buttons.forEach(button => {
 
   function btnClicked() {
-
+    console.log('clicked!')
   }
 
-  button.addEventListener('clicked' btnClicked)
+  button.addEventListener('click', btnClicked)
 })
