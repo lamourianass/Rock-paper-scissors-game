@@ -1,12 +1,12 @@
 const buttons = document.querySelectorAll('button')
-
+const resultEl = document.getElementById('result')
 
 buttons.forEach(button => {
 
 
   button.addEventListener('click', () => {
     const result = playRound(button.id, computerPlay())
-    console.log(result)
+
   })
 })
 
