@@ -1,5 +1,7 @@
 const buttons = document.querySelectorAll('button')
 const resultEl = document.getElementById('result')
+const userScoreEl =document.getElementById('user-score')
+
 let userScore = 0
 let computerScore = 0
 
@@ -26,9 +28,11 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "paper" && computerSelection === "rock") ||
     (playerSelection === "scissors" && computerSelection === "paper")
   ) {
+    userScore++
     return `You win! ${playerSelection} beats ${computerSelection}`
 
   } else {
+    computerScore++
     return `You lose! ${computerSelection} beats ${playerSelection}`
   }
 }
