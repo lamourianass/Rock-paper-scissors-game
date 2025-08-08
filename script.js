@@ -33,7 +33,7 @@ function playRound(playerSelection, computerSelection) {
     return `You win! ${playerSelection} beats ${computerSelection}`
 
   } else {
-    computerScore++
+    computerScoreEl.textContent = computerScore++
     return `You lose! ${computerSelection} beats ${playerSelection}`
   }
 }
