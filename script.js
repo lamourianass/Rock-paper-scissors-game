@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll('button')
 const resultEl = document.getElementById('result')
 let userScore = 0
-
+let computerScore = 0
 
 buttons.forEach(button => {
 
