@@ -29,7 +29,7 @@ function playRound(playerSelection, computerSelection) {
     (playerSelection === "paper" && computerSelection === "rock") ||
     (playerSelection === "scissors" && computerSelection === "paper")
   ) {
-    userScore++
+    userScoreEl.textContent = userScore++
     return `You win! ${playerSelection} beats ${computerSelection}`
 
   } else {
